@@ -4,7 +4,7 @@ public class Pool
 {
     public void run()
     {
-        Duck donaldDuck = new Duck();
+        Duck donaldDuck = new DonaldDuck();
         Duck electricDuck = new ElectronicDuck();
         quack(donaldDuck, electricDuck);
         swim(donaldDuck, electricDuck);
