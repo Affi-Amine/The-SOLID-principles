@@ -2,7 +2,7 @@ package com.directi.training.isp.exercise;
 
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
-public class TimedDoor implements Door
+public class TimedDoor implements LockableDoor, OpenableDoor, TimeOutListener
 {
     private static final int TIME_OUT = 100;
     private boolean _locked;
@@ -48,6 +48,6 @@ public class TimedDoor implements Door
     @Override
     public void proximityCallback()
     {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 }
