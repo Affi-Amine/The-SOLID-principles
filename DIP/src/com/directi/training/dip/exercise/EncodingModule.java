@@ -52,7 +52,7 @@ public class EncodingModule
         }
         String inputString = inputString1.toString();
         String encodedString = Base64.getEncoder().encodeToString(inputString.getBytes());
-        MyDatabase database = new MyDatabase();
+        DataWriter database = new MyDatabase();
         database.write(encodedString);
     }
 }
