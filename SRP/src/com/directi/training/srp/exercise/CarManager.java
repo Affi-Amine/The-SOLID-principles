@@ -19,16 +19,8 @@ public class CarManager
         return null;
     }
 
-    public String getCarsNames()
-    {
-        StringBuilder sb = new StringBuilder();
-        for (Car car : _carsDb) {
-            sb.append(car.getBrand());
-            sb.append(" ");
-            sb.append(car.getModel());
-            sb.append(", ");
-        }
-        return sb.substring(0, sb.length() - 2);
+    public List<Car> getAllCars() {
+        return _carsDb;
     }
 
     public Car getBestCar()
